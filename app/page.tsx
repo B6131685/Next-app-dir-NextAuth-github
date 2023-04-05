@@ -1,7 +1,7 @@
 "use client";
 import { signIn, signOut,useSession } from 'next-auth/react'
 import styles from './page.module.css'
-
+import Link from 'next/link'
 export default function Home() {
   const { data: session } = useSession();
   return (
@@ -15,6 +15,11 @@ export default function Home() {
      <div className={styles.action}>
      {session ? <div onClick={()=>{signOut()}}>sign out</div> : <div onClick={()=>{signIn()}}> sign in</div>}
      </div>
+     <Link href="/me">
+        <div className={styles.action}>
+             me
+        </div>
+      </Link>
     </main>
   )
 }
