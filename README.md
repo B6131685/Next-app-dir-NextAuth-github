@@ -1,3 +1,3 @@
 
-![get token](public/githubOauth2.png)
-![callbackurl](public/githubOauth1.png)
+![get token](public/githubOauth1.png)
+![callbackurl](public/githubOauth2.png)
